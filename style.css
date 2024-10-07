@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #030611;
+    color: #ffffffdc;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    padding: 4%;
+    display: flex;
+    text-align: center;
+}
+
+.introducao {
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    margin-top: 250px;
+}
+
+.backend {
+    margin: 10px 0;
+    font-weight: normal;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 2rem;
+}
+
+.nome {
+    margin: 10px 0;
+    font-weight: normal;
+    font-family: "Krona One", sans-serif;
+    font-size: 3rem;
+}
+
+.social-icon {
+    color: #ffffff9c;
+    margin: 0 10px;
+    font-size: 28px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #fff;
+}
+
+.fa-solid {
+    margin-top: 50px;
+}
+
+.fa-brands {
+    font-size: 30px;
+    margin: 20px 0 10px;
+}
+
+.fa-git-alt{
+    font-size: 30px;
+    padding: 5px;
+}
+
+.fa-database{
+    font-size: 30px;
+    padding: 20px;
+}
+
+.fa-node{
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+h2 {
+    margin: 10px 0;
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+}
+
+h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 10px 0;
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+}
+
+header>.interface {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+header nav.menu-desktop a:hover {
+    color: #fff;
+    transform: scale(1.05);
+    text-decoration: underline;
+
+}
+.menu-desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-desktop ul {
+    display: flex;
+    justify-content: center; 
+    list-style-type: none;
+}
+
+.menu-desktop ul li {
+    margin: 0 18px;
+}
+
+.menu-desktop ul li a {
+    padding: 17px 0;
+    font-size:17px;
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+/* Animação de fade-in para as seções */
+.content {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 1s ease-out, transform 1s ease-out; 
+}
+
+.content.show {
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+/* ESTILO DO SOBRE */
+section.sobre {
+    padding: 260px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #ffffff9c;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #7a40fe;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff9a;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.btn-social button:hover{
+    background-color: #ffffffe3;
+}
+
+/* ESTILO DO projetos */
+section.projetos {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.projetos .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: left center;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+button a {
+    color: #000;
+    text-decoration: none;
+    padding: 1px 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+button a:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 2px;
+}
+
+
+/* ESTILO DO RODAPÉ */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #7a40fe;
+}
+
+footer .line-footer p i {
+    color: #ffffff9c;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #ffffff9c;
+}
