@@ -1,1 +1,1 @@
-![Descrição da Imagem](images/Sem-título.png)
+![Descrição da Imagem](Sem-título.png)
